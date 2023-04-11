@@ -64,7 +64,7 @@ ul {
 }
 
 .about {
-  overflow: hidden;
+  overflow: none;
 }
 
 .about h5,
@@ -153,4 +153,58 @@ ul {
 
 .skill {
   border-left: 1px solid darkgray;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .about .grid,
+  .skills-content .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .skill {
+    border-top: 1px solid darkgray;
+    border-left: none;
+    padding-top: 5px;
+  }
+
+  .about-desc {
+    height: 100%;
+  }
+
+  .about-title .line {
+    display: none;
+  }
+
+  .info-title {
+    font-size: 3rem;
+  }
+
+  .skills-header {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .header {
+    flex-direction: column;
+    height: 90px;
+  }
+
+  .header ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .header .contact-btn {
+    display: none;
+  }
 }
