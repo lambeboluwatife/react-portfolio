@@ -1,38 +1,156 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.header {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.logo {
+  color: #00ff00;
+  font-weight: 900;
+}
+
+.header a,
+.about-title a {
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.links a:hover {
+  color: darkgray;
+}
+
+.contact-btn,
+.about-btn {
+  border: 1px solid #fff;
+  font-size: small;
+}
+
+.contact-btn:hover,
+.about-btn:hover {
+  border: 1px solid darkgray;
+  color: darkgray;
+}
+
+.showcase {
+  height: 90vh;
+  color: #fff;
+  background-image: url(./images/lbd-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 1;
+}
+
+.info-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 5rem;
+  line-height: 0.9;
+}
+
+.info p {
+  color: darkgray;
+}
+
+.about {
+  overflow: hidden;
+}
+
+.about h5,
+.skills-header h4 {
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+.about h2,
+.skills-header h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 0.9;
+  margin-bottom: 40px;
+}
+
+.about-title,
+.about-desc {
+  height: 40vh;
+  text-align: justify;
+}
+
+.squares {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background: #00ff00;
+  margin: 15px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line-1 {
+  width: 100px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.line-2 {
+  width: 80px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
+}
+
+.line-3 {
+  width: 60px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
+}
+
+.line {
+  line-height: 8px;
+  float: right;
+}
+
+.about-desc .line {
+  float: left;
+}
+
+.skills-header {
+  text-align: center;
+}
+
+.frontend span,
+.backend span {
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  font-size: larger;
+}
+
+.number {
+  color: #00ff00;
+}
+
+.skills {
+  text-align: center;
+  border: 1px solid darkgray;
+  padding: 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill {
+  border-left: 1px solid darkgray;
 }
