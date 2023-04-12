@@ -1,6 +1,6 @@
 import weather from "../images/weather.png";
 import finalSpace from "../images/finalSpace.jpg";
-import LBDmovies from "../images/LBDmovies.jpg";
+import LBDmovies from "../images/LBDmovies.png";
 import gkai from "../images/gkai.jpg";
 import camp from "../images/camp.jpg";
 import eventrite from "../images/show.jpg";
@@ -29,8 +29,8 @@ const portfolios = [
     skills: "HTML5 | CSS | JavaScript | ReactJS | API",
     image: weather,
     desc: "Returns the weather data of your current location and you can search for weather data of any city in the world.",
-    live: "https://lbdmovies.netlify.app/",
-    source: "https://github.com/lambeboluwatife/LBDmovies",
+    live: "https://react-weather-app-smoky-nu.vercel.app/",
+    source: "https://github.com/lambeboluwatife/react-weather-app",
     id: 3,
   },
   {
