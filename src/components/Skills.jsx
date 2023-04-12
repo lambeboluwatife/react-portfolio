@@ -86,11 +86,6 @@ const Skills = () => {
                 <h6>MONGOOSE</h6>
               </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
         </div>
       </div>
