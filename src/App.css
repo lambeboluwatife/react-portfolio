@@ -68,13 +68,15 @@ ul {
 }
 
 .about h5,
-.skills-header h4 {
+.skills-header h4,
+.portfolio-title h4 {
   color: #00ff00;
   margin-bottom: 10px;
 }
 
 .about h2,
-.skills-header h2 {
+.skills-header h2,
+.portfolio-title h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   line-height: 0.9;
@@ -155,6 +157,95 @@ ul {
   border-left: 1px solid darkgray;
 }
 
+.portfolio {
+  margin-top: 40px;
+}
+
+.portfolio-content {
+  justify-content: center;
+  text-align: center;
+}
+
+.work-items {
+  border: 1px solid darkgray;
+  padding: 20px;
+  height: 20.5em;
+}
+
+.work-details h4 {
+  color: #00ff00;
+}
+
+.work-details {
+  margin-top: 10px;
+}
+
+.img-area {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-area img {
+  width: 100%;
+  height: auto;
+}
+
+.img-text h6 {
+  display: none;
+}
+
+.img-text,
+.img-area:after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.img-area:after {
+  content: "";
+  height: 100%;
+  top: 0;
+  transition: 0.5s;
+}
+
+.img-area:hover:after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 199, 106, 0.01) 0,
+    rgba(0, 199, 76, 0.25) 25%,
+    rgba(0, 199, 63, 0.75) 75%,
+    rgba(0, 199, 66, 0.95) 100%
+  );
+}
+
+.img-text {
+  padding: 20px;
+  bottom: 0;
+  z-index: 1;
+  transform: translateY(145px);
+  transition: all 0.5s cubic-bezier(0.13, 0.62, 0.81, 0.91) 0s;
+}
+
+.img-area:hover .img-text {
+  transform: translateY(0);
+}
+
+.img-text button {
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.img-text button:hover {
+  border: 1px solid grey;
+  color: grey;
+}
+
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
@@ -186,6 +277,14 @@ ul {
   .skills-header {
     margin-top: 30px;
   }
+
+  .portfolio-content {
+    margin-top: 20px;
+  }
+
+  .work-items {
+    height: 27.5em;
+  }
 }
 
 /* Mobile */
@@ -206,5 +305,33 @@ ul {
 
   .header .contact-btn {
     display: none;
+  }
+
+  .portfolio-content {
+    margin-top: 20px;
+  }
+
+  .work-image {
+    height: 15.5em;
+    width: 12.5em;
+    object-fit: cover;
+  }
+
+  .work-items {
+    height: 15.5em;
+  }
+
+  .img-text h4 {
+    display: none;
+  }
+
+  .img-text h6 {
+    display: block;
+  }
+
+  .img-text button {
+    padding: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
 }
