@@ -1,3 +1,4 @@
+import Resume from "../assets/Boluwatife's Resume.pdf";
 const Header = () => {
   return (
     <div className=" container header">
@@ -19,8 +20,13 @@ const Header = () => {
         </ul>
       </div>
       <div className="btn">
-        <a href="/" className="contact-btn">
-          Let's Talk
+        <a
+          href={Resume}
+          rel="noreferrer"
+          target="_blank"
+          className="contact-btn"
+        >
+          Download Resume
         </a>
       </div>
     </div>

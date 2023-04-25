@@ -21,7 +21,8 @@ ul {
 }
 
 .header a,
-.about-title a {
+.about-title a,
+.contact a {
   padding: 10px;
   margin: 0 5px;
   text-decoration: none;
@@ -246,12 +247,84 @@ ul {
   color: grey;
 }
 
+.contact-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact h4 {
+  color: #00ff00;
+}
+
+.contact p {
+  margin-top: 10px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+form {
+  display: block;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: solid #fff 1px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  width: 30rem;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+footer .social {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer i {
+  color: #00ff00;
+}
+
+footer hr {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 10px;
+}
+
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
   .showcase .grid,
   .about .grid,
-  .skills-content .grid {
+  .skills-content .grid,
+  .contact .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -333,5 +406,10 @@ ul {
     padding: 3px;
     margin-top: 5px;
     margin-left: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 19rem;
   }
 }
