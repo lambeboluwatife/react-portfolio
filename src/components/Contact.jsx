@@ -31,12 +31,7 @@ const Contact = () => {
       <div className="grid grid-3 contact-area">
         <div className=""></div>
         <div className="contact-form">
-          <form
-            name="contact"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-          >
+          <form action="/contact" name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
               <label>
