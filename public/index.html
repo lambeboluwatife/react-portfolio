@@ -26,25 +26,16 @@
     <title>Boluwatife's Portfolio</title>
   </head>
   <body>
-    <form name="contact" netlify-honeypot="bot-field" netlify hidden>
-      <div className="form-group">
-        <div className="input-group-prepend input-group-lg">
-          <span className="input-group-text bg-danger text-white"></span>
-          <input type="text" name="name" />
-        </div>
-      </div>
-      <div className="form-group">
-        <div className="input-group-prepend input-group-lg">
-          <span className="input-group-text bg-danger text-white"></span>
-          <input type="email" name="email" />
-        </div>
-      </div>
-      <div className="form-group">
-        <div className="input-group-prepend input-group-lg">
-          <span className="input-group-text bg-danger text-white"></span>
-          <textarea name="message"></textarea>
-        </div>
-      </div>
+    <form
+      name="contact"
+      netlify-honeypot="bot-field"
+      netlify
+      hidden
+      class="hidden"
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

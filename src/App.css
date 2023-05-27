@@ -304,6 +304,15 @@ input:focus {
   border-color: #00ff00;
 }
 
+textarea:focus {
+  outline: none;
+  border-color: #00ff00;
+}
+
+.hidden {
+  display: hidden;
+}
+
 ::placeholder {
   color: #fff;
   font-family: "Lato", sans-serif;
