@@ -1,4 +1,5 @@
 import Resume from "../assets/Boluwatife's Resume.pdf";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className=" container header">
@@ -6,16 +7,19 @@ const Header = () => {
       <div className="links">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/">Works</a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

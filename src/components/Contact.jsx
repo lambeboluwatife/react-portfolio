@@ -1,8 +1,16 @@
 import Resume from "../assets/Boluwatife's Resume.pdf";
+import { useSpring, animated } from "@react-spring/web";
 
 const Contact = () => {
+  const fadeIn = useSpring({
+    from: { opacity: 0, marginTop: -500 },
+    to: { opacity: 1, marginTop: 0 },
+    config: {
+      duration: 1000,
+    },
+  });
   return (
-    <div className="container contact">
+    <animated.div className="container contact" style={fadeIn}>
       <h4>Contact</h4>
 
       <p className="sub">
@@ -20,7 +28,7 @@ const Contact = () => {
         Download Resume
       </a>
 
-      <div className="grid grid-3">
+      <div className="grid grid-3 contact-area">
         <div className=""></div>
         <div className="contact-form">
           <form
@@ -76,7 +84,7 @@ const Contact = () => {
         </div>
         <div className=""></div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -1,6 +1,15 @@
+import { useSpring, animated } from "@react-spring/web";
+
 const About = () => {
+  const fadeIn = useSpring({
+    from: { opacity: 0, marginTop: -500 },
+    to: { opacity: 1, marginTop: 0 },
+    config: {
+      duration: 1000,
+    },
+  });
   return (
-    <div className="about container">
+    <animated.div className="about container" style={fadeIn}>
       <div className="grid about-title">
         <div>
           <h5>About Me</h5>
@@ -43,7 +52,7 @@ const About = () => {
           series.
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -1,25 +1,26 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Showcase from "./components/Showcase";
 import Skills from "./components/Skills";
-import Squares from "./components/Squares";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Showcase />
-      <Squares />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Showcase />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      {/* <Footer /> */}
+    </Router>
   );
 };
 
