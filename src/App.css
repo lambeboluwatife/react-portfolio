@@ -290,8 +290,18 @@ textarea {
   margin-bottom: 10px;
 }
 
+.submit {
+  cursor: pointer;
+}
+
+.submit:hover {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
 input:focus {
   outline: none;
+  border-color: #00ff00;
 }
 
 ::placeholder {
