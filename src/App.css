@@ -48,9 +48,10 @@ ul {
 .showcase {
   height: 90vh;
   color: #fff;
-  background-image: url(./images/lbd-removebg-preview.png);
+  background-image: url(./images/Bolu.jpg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
   opacity: 1;
 }
 
@@ -140,7 +141,7 @@ ul {
 .backend span {
   font-weight: 900;
   font-family: "Raleway", sans-serif;
-  font-size: larger;
+  font-size: large;
 }
 
 .number {
@@ -150,7 +151,7 @@ ul {
 .skills {
   text-align: center;
   border: 1px solid darkgray;
-  padding: 40px;
+  padding: 30px;
   align-items: center;
 }
 
@@ -270,6 +271,10 @@ ul {
   height: 0;
 }
 
+.contact-area {
+  margin-top: 5%;
+}
+
 form {
   display: block;
 }
@@ -327,6 +332,10 @@ footer hr {
   .contact .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .info {
+    margin-top: 70%;
   }
 
   .skill {

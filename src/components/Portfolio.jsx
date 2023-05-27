@@ -1,10 +1,17 @@
 import portfolios from "../data/portfolio";
 import Work from "./Work";
+import { useSpring, animated } from "@react-spring/web";
 
 const Portfolio = () => {
-  //   console.log(portfolios);
+  const fadeIn = useSpring({
+    from: { opacity: 0, marginTop: -500 },
+    to: { opacity: 1, marginTop: 0 },
+    config: {
+      duration: 1000,
+    },
+  });
   return (
-    <div className="portfolio container">
+    <animated.div className="portfolio container" style={fadeIn}>
       <div className="grid portfolio-title">
         <div>
           <h4>Portfolio</h4>
@@ -27,7 +34,7 @@ const Portfolio = () => {
       </div>
       <br />
       <br />
-    </div>
+    </animated.div>
   );
 };
 

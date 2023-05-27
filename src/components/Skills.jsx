@@ -1,6 +1,15 @@
+import { useSpring, animated } from "@react-spring/web";
+
 const Skills = () => {
+  const fadeIn = useSpring({
+    from: { opacity: 0, marginTop: -500 },
+    to: { opacity: 1, marginTop: 0 },
+    config: {
+      duration: 1000,
+    },
+  });
   return (
-    <div className="container">
+    <animated.div className="container" style={fadeIn}>
       <div className="skills-header">
         <h4>Skills</h4>
         <h2>Available skills that I can work with.</h2>
@@ -24,10 +33,12 @@ const Skills = () => {
           <div className="skills-desc grid">
             <div className=""></div>
             <div className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              mollitia repellendus velit vitae quisquam? Totam nam alias
-              tempore, qui ullam provident! Hic enim possimus, id ab minus sed
-              quisquam similique?
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore mollitia repellendus velit vitae quisquam? Totam nam
+                alias tempore, qui ullam provident! Hic enim possimus, id ab
+                minus sed quisquam similique?
+              </p>
             </div>
           </div>
           <br />
@@ -62,10 +73,12 @@ const Skills = () => {
             <div className="skills-desc grid">
               <div className=""></div>
               <div className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore mollitia repellendus velit vitae quisquam? Totam nam
-                alias tempore, qui ullam provident! Hic enim possimus, id ab
-                minus sed quisquam similique?
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore mollitia repellendus velit vitae quisquam? Totam nam
+                  alias tempore, qui ullam provident! Hic enim possimus, id ab
+                  minus sed quisquam similique?
+                </p>
               </div>
             </div>
             <br />
@@ -89,7 +102,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 
